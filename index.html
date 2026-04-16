@@ -1,199 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Omar Ahmad Elhakim - CV</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       color: #333;
-      line-height: 1.6;
-      margin: 2.5;
-      padding: 0.5;
+      line-height: 1.4;
+      margin: 20px 40px;
+      padding: 0;
     }
     .header {
       background-color: #fff;
       color: #333;
       text-align: center;
-      padding: 15px;
+      padding: 1px;
+      border-bottom: 2px solid #333;
+      margin-bottom: 2px;
     }
-    .section {
-      margin-bottom: 30px;
-    }
+    h1 { margin: 0; font-size: 26px; }
+    .section { margin-bottom: 15px; }
     .section-title {
       font-size: 18px;
       font-weight: bold;
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
-      margin-bottom: 10px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
     }
-    .section-content {
-      margin-left: 20px;
-    }
-    .contact-info {
-      margin-bottom: 1px;
-    }
-    .contact-info span {
-      display: block;
-    }
-    .project {
-      margin-bottom: 10px;
-    }
-    .project-title {
+    .section-content { margin-left: 10px; }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
       font-weight: bold;
+      font-size: 15px;
     }
-    .objective {
+    .item-sub {
       font-style: italic;
-      margin-bottom: 15px;
+      font-size: 13px;
+      margin-bottom: 4px;
     }
-    .skill {
+    ul { margin: 5px 0 10px 20px; padding: 0; font-size: 13.5px; }
+    li { margin-bottom: 4px; }
+    .skill-tag {
       display: inline-block;
       background-color: #333;
       color: #fff;
-      padding: 5px 10px;
-      margin-right: 5px;
-      margin-bottom: 1px;
+      padding: 3px 8px;
+      margin: 2px;
+      font-size: 12px;
+      border-radius: 3px;
     }
-    .language {
-      display: inline-block;
-      background-color: #333;
-      color: #fff;
-      padding: 5px 10px;
-      margin-right: 5px;
-      margin-bottom: 1px;
-    }
-    .social-icons {
-      margin-top: 2px;
+    .footer {
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 15px;
       text-align: center;
     }
-    .social-icons a {
-      display: inline-block;
-      margin-right: 20px;
-    }
-    .social-icons img {
-      width: 40px; /* Adjust the size of the icons as needed */
-    }
+    .contact-info { font-size: 13px; margin-bottom: 10px; }
+    .contact-info span { display: inline-block; margin: 0 10px; }
+    .social-icons a { display: inline-block; margin: 0 10px; }
+    .social-icons img { width: 35px; }
   </style>
 </head>
 <body>
+
   <div class="header">
     <h1>Omar Ahmad Elhakim</h1>
   </div>
+
   <div class="section">
     <div class="section-title">Education</div>
     <div class="section-content">
-      <div>
-        Student at Computer Science, Ain Shams University (Expected Graduation: 2026)
+      <div class="item-header">
+        <span>Ain Shams University</span>
+        <span>Expected Graduation July 2026</span>
       </div>
-      <div>GPA: 3.4</div>
-    </div>
-  </div>
-  
-<div class="section">
-  <div class="section-title">Summer Training Experiences</div>
-  <div class="section-content">
-    <div class="project">
-      <div class="project-title">Data Engineering and Data Analysis Training</div>
-      <div>
-        In this  training we learned ways to get data like <strong>APIs</strong> and <strong>web scraping</strong>. Gathering that data and filtering it with <strong>pandas </strong>and <strong>numpy</strong> .Then
-        visualizing and getting important information  out of the data using <strong> PowerBi</strong>.(Computer Science faculty, Summer 2023)
-      </div>
-    </div>
-    <div class="project">
-      <div class="project-title">Linux and Shell Scripting Training</div>
-      <div>
-        Participated in a comprehensive training program covering <strong> Linux</strong> fundamentals and <strong> Shell Scripting</strong>. Sessions included Introduction to Linux, Mastering File Management and Redirection, Understanding Permissions and Security, Unlocking the Power of Shell scripting and Exploring <strong>Vim</strong> for Efficient Text Processing.(Computer Science faculty, Summer 2023)
-      </div>
-    </div>
-  </div>
-</div>
-
-  <div class="section">
-    <div class="section-title">Projects</div>
-    <div class="section-content">
-      <div class="project">
-        <div class="project-title">Vibration Analysis Model </div>
-        <div>
-        The project goal is to create a model that can read vibration time series and output the its faults and status. We created <strong> tens</strong> of models using <strong>python</strong>, and started changing and updating our model after some researches, changing the model's architecture,data standardization ways and more. We used <strong> optuna</strong> to find the best hyperparameters such as the learning rate , batchsize and window size ,wich all have a huge effect on the model's perfomance.For evaluating the model performance our main metrics were <strong> validation loss </strong>and <Strong> F1 score</Strong> , and we used confusion matrix for better visualization of its performance .In the way of finding the best model we have used <strong> pytorch, fastai and tsai</strong>.For data preprocessing <strong>numpy</strong>  and <strong> pandas</strong> are used, and <strong> matplotlib</strong> for its visualization.     
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project-title">Gym Management System </div>
-        <div>
-        In order to learn <strong> OOP</strong> and get a grasp of its beauty, we creates gym management system that allows its administrator to keep track of the gym's users , coaches, equipments and memberships .The program allows the user to create a new account , manage his membership , choose his coach , create and inbody and more.All while creating separate classes for each entity , using <strong> java</strong> and OOP's advantages like inheritance and encapsulation. 
-        </div>
-      </div>
-          <div class="project">
-            <div class="project-title">Vezeeta Database Design and Implementation</div>
-            <div>
-            Designed a database for a Vezeeta-like healthcare system. The <strong> database</strong> kept track of the patients and their appointments. While keeping track of the doctors and the clinics they are available at. All while maintaining the relationship between those and adhering to the constraints. The database design included designing an <strong> ERD</strong> and a <strong> schema</strong> , then implementing it with <strong> Oracle PL\SQL</strong> , and the final step was to enter and access the data with <strong>Oracle forms</strong> .  
-            </div>
-          </div>
-      
-      <div class="project">
-        <div class="project-title">Fireboy and Watergirl Game </div>
-        <div>
-        Created a clone for the  Fireboy and Watergirl game with <strong> C++</strong> and the <strong> SFML</strong> library. The challenges brought by the game was creating a gravity for two 2D characters in a map(which we also created) and putting obstacles for them . The game had a full <strong> GUI</strong> experience containing menus and visuals all the way to the end. Allowing the 2 players to start ,pause and retry if they lose. The project was made with Structured programming, no classes , only functions and structs were used        
-        </div>
-      </div>
+      <div>Computer Science Student, Scientific Computing Department | GPA: 3.4</div>
     </div>
   </div>
 
   <div class="section">
-    <div class="section-title">Programming Languages / Technologies </div>
+    <div class="section-title">Experience</div>
     <div class="section-content">
-      <span class="language">Python</span>
-      <span class="language">C</span>
-      <span class="language">C++</span>
-      <span class="language">Java</span>
-      <span class="language">git</span>
-      <span class="language">Java</span>
-      <span class="language">Bash</span>
+      <div class="item-header">
+        <span>Zinad</span>
+        <span>July 2025 – Present</span>
+      </div>
+      <div class="item-sub">Software Engineer (Part-Time)</div>
+      <ul>
+        <li>Built an AI-powered email analyzer to detect phishing emails using Python, LangChain, and prompt engineering.</li>
+        <li>Refactored the Python analyzer into a Laravel/PHP backend, setting up queued jobs to handle the AI API calls asynchronously and prevent server timeouts.</li>
+        <li>Developed a phishing simulation tool that automatically generates themed emails and fake landing pages from scratch based on user inputs, using AI, MJML, and Laravel.</li>
+        <li>Added a real-time chatbot to the application with instant message streaming, using WebSockets</li>
+      </ul>
     </div>
   </div>
-  <!-- <div class="section">
-    <div class="section-title">Technologies/Tools</div>
-    <div class="section-content">
-      <span class="skill">Machine Learning</span>
-      <span class="skill">git</span>
-      <span class="skill">Github</span>
-      <span class="skill">PyTorch</span>
-      <span class="skill">NumPy</span>
-      <span class="skill">Pandas</span>
-      <span class="skill">Database/SQL</span> 
-      <span class="skill">OOP</span>
-      <span class="skill">API Integration</span>
-      <span class="skill">Web Scraping</span>
-      <span class="skill">Linux</span>
-      <span class="skill">Bash Scripting</span>
-    </div> -->
-  </div>
+
   <div class="section">
-    <div class="section-title">Extracurricular Activities</div>
+    <div class="section-title">Graduation Project</div>
     <div class="section-content">
-      <div class="body">
-        Regularly participated in coding competitions and enhanced problem-solving abilities using C++ (ACM-Ascis Club, Ain Shams University)
+      <div class="item-header">
+        <span>EEG-Based Emotion Classification (Neuromarketing)</span>
       </div>
-      <div></div>
+      <ul>
+        <li>Built a data preprocessing pipeline in Python to clean and extract Differential Entropy (DE) and spatial features from the SEED-IV EEG dataset.</li>
+        <li>Developed and trained deep learning models in PyTorch, specifically Directed Graph CNNs (DGCNN), Continuous CNNs (CCNN) and other transformer-based models to classify distinct emotional states.</li>
+        <li>Fine-tuned hyperparameters to achieve over 84% accuracy on 4-class emotion recognition using DGCNN.</li>
+      </ul>
     </div>
-    <div class="section">
-      <div class="section-title">Contact Information</div>
-      <div class="section-content">
-        <div class="contact-info">
-          <span>Address: Maadi, Cairo, Egypt</span>
-          <span>Phone: +201127002031</span>
-          <span>Email: omarelhakim@icloud.com</span>
-        </div>
-      </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Technical Projects</div>
+    <div class="section-content">
+      <div class="item-header">Operating System Development</div>
+      <ul>
+        <li>Developed core parts of an operating system kernel using C. </li>
+        <li>Implemented virtual memory management (paging, heap), CPU scheduling, and synchronization primitives like semaphores.</li>
+      </ul>
+
+      <div class="item-header">Graph-Based Image Segmentation</div>
+      <ul>
+        <li>Created a C# application to segment images by modeling pixels as nodes in a graph and applying custom edge-sorting and segment-merging algorithms.</li>
+      </ul>
+
+      <div class="item-header">Machinery Fault Diagnosis (Vibration Analysis)</div>
+      <ul>
+        <li>Developed a time-series classification model to detect mechanical faults using PyTorch, Fastai, and Tsai, leveraging Optuna for hyperparameter tuning to optimize the F1 score.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="section-content">
+      <div><strong>Languages:</strong> Python, C/C++, C#, Java, PHP, JavaScript, SQL, Bash</div>
+      <div><strong>Tools/Frameworks:</strong> PyTorch, LangChain, Laravel, Docker, Angular, Git, Github, Linux, MJML</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Training & Development</div>
+    <div class="section-content">
+      <ul>
+        <li><strong>MEC Model of Leadership:</strong> Completed an extensive leadership program (160 hours) covering emotional intelligence, effective communication, self-awareness (50 hours), the Enneagram, problem-solving, and team building.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="contact-info">
+      <span>Address: Maadi, Cairo, Egypt</span>
+      <span>Phone: +201127002031</span>
+      <span>Email: omarelhakim@icloud.com</span>
+    </div>
     <div class="social-icons">
-    <a href="https://github.com/Omar-Elhakim" target="_blank" title="GitHub">
-      <img src="github-logo.png" alt="GitHub Icon">
-    </a>
-    <a href="https://www.linkedin.com/in/omar-elhakim/" target="_blank" title="LinkedIn">
-      <img src="linkedin.png" alt="LinkedIn Icon">
-    </a>
+      <a href="https://github.com/Omar-Elhakim" target="_blank">
+        <img src="github-logo.png" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/omar-elhakim/" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
   </div>
-</div>
 
 </body>
 </html>

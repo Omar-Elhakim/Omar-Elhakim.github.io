@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Omar Ahmad Elhakim - Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.4;
+      margin: 20px 40px;
+      padding: 0;
+    }
+    .header {
+      background-color: #fff;
+      color: #333;
+      text-align: center;
+      padding: 1px;
+      border-bottom: 2px solid #333;
+      margin-bottom: 2px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+    .section {
+      margin-bottom: 15px;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 1px solid #333;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+    .section-content {
+      margin-left: 10px;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .item-sub {
+      font-style: italic;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    .contact-info {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    .contact-info span {
+      display: inline-block;
+      margin: 0 5px;
+      vertical-align: middle;
+    }
+    .project {
+      margin-bottom: 14px;
+    }
+    .project ul {
+      margin: 4px 0 0 0;
+      padding-left: 20px;
+      font-size: 13.5px;
+    }
+    .project li {
+      margin-bottom: 3px;
+    }
+    .project-title {
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .project-tag {
+      font-weight: normal;
+      font-style: italic;
+      font-size: 13px;
+      color: #555;
+    }
+    .repo-link {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 4px;
+      line-height: 1;
+    }
+    .repo-link svg {
+      width: 13px;
+      height: 13px;
+      stroke: #0969da;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .social-icons {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+    .social-icons a {
+      display: inline-block;
+      margin: 0 4px;
+    }
+    .social-icons img {
+      width: 18px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Omar Ahmad Elhakim</h1>
+    <div class="contact-info">
+      <span>Maadi, Cairo, Egypt</span> |
+      <span>+201127002031</span> |
+      <span>omarelhakim@icloud.com</span> |
+      <span class="social-icons">
+        <a href="https://github.com/Omar-Elhakim" target="_blank">
+          <img src="github-logo.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/omar-elhakim/" target="_blank">
+          <img src="linkedin.png" alt="LinkedIn">
+        </a>
+      </span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="section-content">
+      <div class="item-header">
+        <span>Ain Shams University</span>
+        <span>Graduated June 2026</span>
+      </div>
+      <div>BSc in Computer Science, Scientific Computing Department | GPA: 3.3</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Experience</div>
+    <div class="section-content">
+
+      <div class="project">
+        <div class="item-header">
+          <span>Zinad</span>
+          <span>July 2024 &ndash; Present</span>
+        </div>
+        <div class="item-sub">Software Engineer (Part-Time)</div>
+        <ul>
+          <li>Built a phishing simulation engine that generates themed emails and working fake landing pages from the parameters a user picks, driving <strong>Ollama</strong> from a <strong>Laravel</strong> backend and rendering the emails with <strong>MJML</strong>.</li>
+          <li>Wrote an email analyzer in <strong>Python</strong>, <strong>LangChain</strong> and <strong>Ollama</strong> that flags phishing from tone, context and grammatical anomalies; its verdicts feed the platform's security metrics.</li>
+          <li>Developed an internal <strong>RAG</strong> system that answers employee questions from the company's policy PDFs, splitting the documents with <strong>recursive character chunking</strong> with overlap, embedding the chunks into a <strong>FAISS</strong> vector store and retrieving the passages relevant to each question.</li>
+          <li>Shipped a chatbot into the live application with <strong>LangChain</strong> and <strong>Ollama</strong>, streaming replies token by token instead of making the user wait for the full answer.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Projects</div>
+    <div class="section-content">
+
+      <div class="project">
+        <div class="project-title">Neuromarketing: EEG Emotion Recognition<a class="repo-link" href="https://github.com/Omar-Elhakim/Neuromarketing" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+          <span class="project-tag">— Graduation Project</span>
+        </div>
+        <ul>
+          <li>Classified emotion from raw <strong>EEG</strong> brain signals on the <strong>SEED-IV</strong> dataset, tuning nine deep-learning architectures (<strong>DaViT</strong>, <strong>DGCNN</strong>, <strong>CCNN</strong>, <strong>BFENet</strong>, <strong>TSCeption</strong> and others) in <strong>PyTorch</strong> under subject-dependent and cross-subject protocols, reaching <strong>96%</strong> accuracy on binary and <strong>85%</strong> on 4-class emotion recognition.</li>
+          <li>Combined the dataset's precomputed <strong>differential entropy</strong> features with our own: per-band differential entropy extracted through <strong>db4 wavelet</strong> decomposition, and hemispheric asymmetry (<strong>DASM</strong>) features derived from it.</li>
+          <li>Built the raw-signal preprocessing pipeline in <strong>SciPy</strong> and <strong>NumPy</strong> (Butterworth bandpass, downsampling, z-score normalization, windowing), and re-ran the experiments on the <strong>14 channels</strong> of a consumer Emotiv EPOC+ headset to test viability on affordable hardware.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Machinery Fault Diagnosis from Vibration Signals<a class="repo-link" href="https://github.com/Omar-Elhakim/Using-AI-in-machinery-fault-diagnosis" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Detected mechanical faults in rotating machinery from raw accelerometer signals as a <strong>multivariate time-series classification</strong> task, training <strong>InceptionTime</strong>, <strong>xResNet1d</strong>, <strong>LSTM-FCN</strong> and custom CNN/RNN models in <strong>PyTorch</strong> and <strong>tsai</strong> to <strong>0.88 F1</strong> on flow faults and <strong>0.81 F1</strong> on bearing faults.</li>
+          <li>Wrote the <strong>NumPy</strong> data library behind every experiment, covering eight fault categories, per-fault channel selection, overlapping sliding windows and an optional <strong>FFT</strong> half-spectrum.</li>
+          <li>Tuned learning rate, batch size and window size with <strong>Optuna</strong> pruning callbacks, countering heavy class imbalance to optimize <strong>F1</strong> over accuracy.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">RAG<a class="repo-link" href="https://github.com/Omar-Elhakim/RAG" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Built a document Q&amp;A service in <strong>FastAPI</strong> and <strong>LangServe</strong>, splitting a company policy corpus into overlapping chunks with a <strong>recursive character splitter</strong>, embedding them with <strong>word2vec</strong>, indexing them in a <strong>Chroma</strong> vector store, and grounding <strong>Gemini</strong> on the chunks retrieved for each question.</li>
+          <li>Added a phishing screener that runs an email body through a self-hosted <strong>Llama</strong> on <strong>Ollama</strong>, returning nine checks (urgency language, requests for confidential information, character-encoding tricks such as Cyrillic lookalikes, and others) as structured <strong>JSON</strong> with English and Arabic justifications, covered by end-to-end API tests.</li>
+          <li>Extended retrieval to databases with a <strong>text-to-SQL</strong> chain that feeds the live <strong>MySQL</strong> schema to the model, executes the generated query and phrases the result in plain English.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Blood Cell Detection with YOLO<a class="repo-link" href="https://github.com/Omar-Elhakim/Blood-Object-Detection-with-YOLO" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Located and classified red cells, white cells and platelets in blood-smear microscope images, fine-tuning pretrained <strong>YOLOv8</strong> and <strong>YOLOv5</strong> detectors on 364 annotated slides and benchmarking the two generations on the same split at <strong>0.93 mAP@50</strong>.</li>
+          <li>Wrote the dataset pipeline behind the training run, converting <strong>~5000</strong> corner-coordinate bounding boxes into normalized <strong>YOLO</strong> center format with <strong>OpenCV</strong>.</li>
+          <li>Evaluated per class, holding <strong>0.98 mAP@50</strong> on white cells despite being outnumbered ten to one by red cells.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Credit-Card Fraud Detection<a class="repo-link" href="https://github.com/Omar-Elhakim/Fraud-detection-AI-model" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Flagged fraudulent transactions in a log of <strong>1M</strong> card payments of which only <strong>0.57%</strong> were fraud, training <strong>Random Forest</strong> and <strong>SVM</strong> classifiers in <strong>scikit-learn</strong> to <strong>0.94 balanced accuracy</strong> and <strong>89% recall</strong>.</li>
+          <li>Engineered transaction features (deviation from the mean amount, hour of day, time since the card's last payment, merchant and category frequency) and used correlation against the fraud label to keep the four that carried signal.</li>
+          <li>Compared <strong>SMOTE</strong> oversampling against majority-class undersampling and scored on recall and balanced accuracy.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Multilayer Perceptron from Scratch<a class="repo-link" href="https://github.com/Omar-Elhakim/MLP-From-Scratch" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Implemented a neural network in pure <strong>NumPy</strong>, writing feedforward, <strong>backpropagation</strong> and weight updates directly from the derivatives with no deep-learning framework; reached <strong>95%</strong> test accuracy on three-species classification.</li>
+          <li>Made the network fully configurable: any depth and width of hidden layers, <strong>sigmoid</strong> or <strong>tanh</strong> activation paired with its matching derivative, and an optional bias term.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">ECG Heartbeat Classification<a class="repo-link" href="https://github.com/Omar-Elhakim/ECG-Classification" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Separated healthy from abnormal heartbeats in ECG recordings, building the signal pipeline in <strong>SciPy</strong> and <strong>PyWavelets</strong> (4th-order <strong>Butterworth</strong> bandpass, 2-level <strong>db4 wavelet</strong> decomposition, min-max scaling) and classifying 400 held-out beats with <strong>100%</strong> accuracy.</li>
+          <li>Reduced each 300-sample beat to its level-2 wavelet coefficients, which separate the two beat shapes well enough for a <strong>5-NN</strong> classifier to reach that accuracy without tuning.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Road Segmentation with Naive Bayes<a class="repo-link" href="https://github.com/Omar-Elhakim/road-segmentation-naive-bayes" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Segmented the road surface out of driving-scene photos pixel by pixel with a <strong>Gaussian Naive Bayes</strong> classifier written from scratch in <strong>NumPy</strong>, including the class means, variances, priors and likelihood function.</li>
+          <li>Converted the images to <strong>HSV</strong> with <strong>OpenCV</strong> and trained on the hue of every pixel across 31 labelled scenes, separating road from lane markings, signs, cars and background.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Tech Company Acquisition Price Prediction<a class="repo-link" href="https://github.com/Omar-Elhakim/TechCompaniesPricePrediction" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Predicted what an acquirer would pay for a tech company, joining four raw <strong>CSV</strong> sources (acquired firms, acquirers, deals and founders) into one feature table in <strong>pandas</strong>, and comparing <strong>Gradient Boosting</strong>, <strong>Random Forest</strong>, <strong>XGBoost</strong> and linear models in <strong>scikit-learn</strong> on both the price and the deal-size class.</li>
+          <li>Engineered the features the raw data did not have: company age at acquisition, one-hot expansion of multi-valued market categories and deal terms, grouping of rare countries, and repair of mistyped years found by plotting the data.</li>
+          <li>Handled the messy numerics with a <strong>Shapiro-Wilk</strong> normality test, <strong>IQR</strong> outlier capping and log transforms on skewed columns, then <strong>KNN imputation</strong> for the gaps, and tuned each model with grid and randomized search.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Eye-Movement Control from Eye Signals<a class="repo-link" href="https://github.com/Omar-Elhakim/eog-eye-movement-classification" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Turned eye movements into computer commands, classifying 181 recordings of the electrical signal around the eye into five gestures (up, down, left, right and blink) after a <strong>SciPy</strong> pipeline of DC removal, a 4th-order <strong>Butterworth</strong> bandpass and z-score normalization.</li>
+          <li>Compared three representations of the same signal (raw samples, <strong>autoregressive</strong> coefficients, <strong>db4 wavelet</strong> energies, and a fusion of the last two), training an <strong>SVM</strong> on each with <strong>GridSearchCV</strong> over kernel, C and gamma.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Meal Recognition and Calorie Estimation<a class="repo-link" href="https://github.com/Omar-Elhakim/Food-Fruit-Recognition" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Estimated the calories in a meal photo in <strong>PyTorch</strong>, chaining five trained models behind one pipeline: an <strong>EfficientNet</strong> that sorts the photo into food or fruit, then a <strong>ResNet</strong> that names the fruit or a <strong>Siamese</strong> network that names the dish.</li>
+          <li>Handled unseen dishes with <strong>one-shot</strong> recognition rather than a fixed label set, matching a query against reference embeddings by distance and returning no match when nothing is close enough, so new dishes can be added from a single example without retraining.</li>
+          <li>Segmented the fruit from its background with a <strong>U-Net</strong> at <strong>0.99 IoU</strong>, and added a 31-class segmentation model in <strong>TensorFlow</strong> to label each fruit type pixel by pixel.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Interior Design Style Classification<a class="repo-link" href="https://github.com/Omar-Elhakim/Indoor-Style-Image-Classification" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Sorted photos of rooms into 17 interior-design styles for a <strong>Kaggle</strong> competition, rebuilding <strong>Vision Transformer</strong>, <strong>MobileNetV2</strong>, <strong>GoogLeNet</strong> and <strong>VGG16</strong> from their papers in <strong>PyTorch</strong> (patch embedding, multi-head self-attention, inverted residuals, inception blocks) and benchmarking each against its pretrained equivalent.</li>
+          <li>Countered a class-imbalanced training set with a <strong>weighted sampler</strong> and online augmentation, and shipped a standalone inference script per architecture.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Encryption and Cryptanalysis Toolkit<a class="repo-link" href="https://github.com/Omar-Elhakim/Encryption-Techniques" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Implemented ten ciphers from scratch in <strong>Java</strong> with no cryptography libraries, from classical ones (Caesar, Playfair, Hill, Vigen&egrave;re, rail fence, columnar transposition) up to full <strong>AES-128</strong> and <strong>DES</strong> block ciphers, including the byte substitution, row shifts, column mixing and key expansion.</li>
+          <li>Broke the classical ciphers as well as building them, recovering the key from a known plaintext and ciphertext pair, and cracking the monoalphabetic cipher by letter-frequency analysis alone, all covered by <strong>45 JUnit tests</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Pac-Man with Pathfinding Ghosts<a class="repo-link" href="https://github.com/Omar-Elhakim/Pacman" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Built a Pac-Man clone in <strong>C++</strong> and <strong>raylib</strong> with four ghosts that each run a <strong>breadth-first search</strong> over the maze grid and step along the shortest path; difficulty changes what they search for, from a random corridor to Pac-Man himself.</li>
+          <li>Loaded the mazes from <strong>CSV</strong> files and shipped a mouse-driven map editor that lets a player draw a maze and immediately play it, with persisted high scores and a resizable window that rescales the grid.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Graph-Based Image Segmentation<a class="repo-link" href="https://github.com/OmarWatany/ImageSegmentation" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Split images into regions in <strong>C#</strong>, implementing a <strong>graph segmentation</strong> algorithm from its paper over a graph built from every pixel.</li>
+          <li>Sorted those edges in <strong>linear time</strong> with a 256-bucket <strong>counting sort</strong> rather than an O(E log E) comparison sort.</li>
+          <li>Segmented the red, green and blue channels independently and intersected the three results.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="section-content">
+      <div><strong>Languages:</strong> Python, C/C++, C#, Java, PHP, JavaScript, SQL, Bash</div>
+      <div><strong>Tools/Frameworks:</strong> PyTorch, TensorFlow, scikit-learn, NumPy, Pandas, SciPy, OpenCV, LangChain,
+        FastAPI, Laravel, Docker, Git, Linux, Django</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Training &amp; Development</div>
+    <div class="section-content">
+      <ul>
+        <li><strong>MEC Model of Leadership:</strong> Completed an extensive leadership program (160 hours) covering
+          emotional intelligence, effective communication, self-awareness (50 hours), the Enneagram, problem-solving,
+          and team building.</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

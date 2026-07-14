@@ -12,7 +12,6 @@
       margin: 20px 40px;
       padding: 0;
     }
-
     .header {
       background-color: #fff;
       color: #333;
@@ -21,16 +20,13 @@
       border-bottom: 2px solid #333;
       margin-bottom: 2px;
     }
-
     h1 {
       margin: 0;
       font-size: 26px;
     }
-
     .section {
       margin-bottom: 15px;
     }
-
     .section-title {
       font-size: 18px;
       font-weight: bold;
@@ -38,75 +34,120 @@
       padding-bottom: 3px;
       margin-bottom: 8px;
     }
-
     .section-content {
       margin-left: 10px;
     }
-
     .item-header {
       display: flex;
       justify-content: space-between;
       font-weight: bold;
       font-size: 15px;
     }
-
     .item-sub {
       font-style: italic;
       font-size: 13px;
       margin-bottom: 4px;
     }
-
-    ul {
-      margin: 5px 0 10px 20px;
-      padding: 0;
-      font-size: 13.5px;
-    }
-
-    li {
-      margin-bottom: 4px;
-    }
-
-    .skill-tag {
-      display: inline-block;
-      background-color: #333;
-      color: #fff;
-      padding: 3px 8px;
-      margin: 2px;
-      font-size: 12px;
-      border-radius: 3px;
-    }
-
     .contact-info {
       font-size: 13px;
       margin-bottom: 10px;
     }
-
     .contact-info span {
       display: inline-block;
       margin: 0 5px;
       vertical-align: middle;
     }
-
+    .project {
+      margin-bottom: 14px;
+    }
+    .project ul {
+      margin: 4px 0 0 0;
+      padding-left: 20px;
+      font-size: 13.5px;
+    }
+    .project li {
+      margin-bottom: 3px;
+    }
+    .project-title {
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .project-tag {
+      font-weight: normal;
+      font-style: italic;
+      font-size: 13px;
+      color: #555;
+    }
+    .repo-link {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 4px;
+      line-height: 1;
+    }
+    .repo-link svg {
+      width: 13px;
+      height: 13px;
+      stroke: #0969da;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
     .social-icons {
       display: inline-block;
       vertical-align: middle;
       margin-left: 5px;
     }
-
     .social-icons a {
       display: inline-block;
       margin: 0 4px;
     }
-
     .social-icons img {
       width: 18px;
       vertical-align: middle;
+    }
+    @media print {
+      @page {
+        size: A4;
+        margin: 9mm 11mm;
+      }
+      body {
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.25;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      .section {
+        margin-bottom: 9px;
+      }
+      .section-title {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      .project {
+        margin-bottom: 8px;
+        break-inside: avoid;
+      }
+      .project ul {
+        font-size: 12px;
+      }
+      .project li {
+        margin-bottom: 2px;
+      }
+      .item-header,
+      .project-title {
+        font-size: 13.5px;
+      }
+      ul {
+        margin: 3px 0 6px 20px;
+      }
     }
   </style>
 </head>
 
 <body>
-
   <div class="header">
     <h1>Omar Ahmad Elhakim</h1>
     <div class="contact-info">
@@ -129,69 +170,78 @@
     <div class="section-content">
       <div class="item-header">
         <span>Ain Shams University</span>
-        <span>Expected Graduation June 2026</span>
+        <span>Graduated June 2026</span>
       </div>
-      <div>Senior Computer Science Student, Scientific Computing Department | GPA: 3.3</div>
+      <div>BSc in Computer Science, Scientific Computing Department | GPA: 3.3</div>
     </div>
   </div>
 
   <div class="section">
     <div class="section-title">Experience</div>
     <div class="section-content">
-      <div class="item-header">
-        <span>Zinad</span>
-        <span>July 2024 – Present</span>
+
+      <div class="project">
+        <div class="item-header">
+          <span>Zinad</span>
+          <span>July 2024 &ndash; Present</span>
+        </div>
+        <div class="item-sub">AI Engineer (Part-Time)</div>
+        <ul>
+          <li>Built a phishing simulation engine that generates themed emails and working fake landing pages from the parameters a user picks, driving <strong>Ollama</strong> from a <strong>Laravel</strong> backend and rendering the emails with <strong>MJML</strong>.</li>
+          <li>Wrote an email analyzer in <strong>Python</strong>, <strong>LangChain</strong> and <strong>Ollama</strong> that flags phishing from tone, context and grammatical anomalies; its verdicts feed the platform's security metrics.</li>
+          <li>Developed an internal <strong>RAG</strong> system that answers employee questions from the company's policy PDFs, splitting the documents with <strong>recursive character chunking</strong> with overlap, embedding the chunks into a <strong>FAISS</strong> vector store and retrieving the passages relevant to each question.</li>
+          <li>Shipped a chatbot into the live application with <strong>LangChain</strong> and <strong>Ollama</strong>, streaming replies token by token instead of making the user wait for the full answer.</li>
+        </ul>
       </div>
-      <div class="item-sub">Software Engineer (Part-Time)</div>
-      <ul>
-        <li>Built an email analyzer to detect phishing emails using Python, Ollama, LangChain, and prompt engineering.
-        </li>
-        <li>Developed an internal Retrieval-Augmented Generation (RAG) system using Python, LangChain, and FAISS,
-          enabling employees to instantly query and extract information from company policy PDFs.</li>
-        <li>Developed a phishing simulation tool that generates themed emails and fake landing pages from scratch based
-          on user inputs, using Ollama, MJML, and Laravel.</li>
-        <li>Added a real-time chatbot to the application with instant message streaming, using WebSockets</li>
-      </ul>
+
     </div>
   </div>
 
   <div class="section">
-    <div class="section-title">Graduation Project</div>
+    <div class="section-title">Projects</div>
     <div class="section-content">
-      <div class="item-header">
-        <span>EEG-Based Emotion Classification (Neuromarketing)</span>
+
+      <div class="project">
+        <div class="project-title">RAG<a class="repo-link" href="https://github.com/Omar-Elhakim/RAG" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Built a document Q&amp;A service in <strong>FastAPI</strong> and <strong>LangServe</strong>, splitting a company policy corpus into overlapping chunks with a <strong>recursive character splitter</strong>, embedding them with <strong>word2vec</strong>, indexing them in a <strong>Chroma</strong> vector store, and grounding <strong>Gemini</strong> on the chunks retrieved for each question.</li>
+          <li>Added a phishing screener that runs an email body through a self-hosted <strong>Llama</strong> on <strong>Ollama</strong>, returning nine checks (urgency language, requests for confidential information, character-encoding tricks such as Cyrillic lookalikes, and others) as structured <strong>JSON</strong> with English and Arabic justifications, covered by end-to-end API tests.</li>
+          <li>Extended retrieval to databases with a <strong>text-to-SQL</strong> chain that feeds the live <strong>MySQL</strong> schema to the model, executes the generated query and phrases the result in plain English.</li>
+        </ul>
       </div>
-      <ul>
-        <li>Built a data preprocessing pipeline in Python to clean and extract Differential Entropy (DE) and spatial
-          features from the SEED-IV EEG dataset.</li>
-        <li>Developed and trained deep learning models in PyTorch, specifically Directed Graph CNNs (DGCNN), Continuous
-          CNNs (CCNN) and other transformer-based models to classify distinct emotional states.</li>
-        <li>Fine-tuned hyperparameters to achieve over 84% accuracy on 4-class emotion recognition using DGCNN.</li>
-      </ul>
-    </div>
-  </div>
 
-  <div class="section">
-    <div class="section-title">Technical Projects</div>
-    <div class="section-content">
-      <div class="item-header">Operating System Development</div>
-      <ul>
-        <li>Developed core parts of an operating system kernel using C. </li>
-        <li>Implemented virtual memory management (paging, heap), CPU scheduling, and synchronization primitives like
-          semaphores.</li>
-      </ul>
+      <div class="project">
+        <div class="project-title">Neuromarketing: EEG Emotion Recognition<a class="repo-link" href="https://github.com/Omar-Elhakim/Neuromarketing" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+          <span class="project-tag">— Graduation Project</span>
+        </div>
+        <ul>
+          <li>Classified emotion from raw <strong>EEG</strong> brain signals on the <strong>SEED-IV</strong> dataset, tuning nine deep-learning architectures (<strong>DaViT</strong>, <strong>DGCNN</strong>, <strong>CCNN</strong>, <strong>BFENet</strong>, <strong>TSCeption</strong> and others) in <strong>PyTorch</strong> under subject-dependent and cross-subject protocols, reaching <strong>96%</strong> accuracy on binary and <strong>85%</strong> on 4-class emotion recognition.</li>
+          <li>Combined the dataset's precomputed <strong>differential entropy</strong> features with our own: per-band differential entropy extracted through <strong>db4 wavelet</strong> decomposition, and hemispheric asymmetry (<strong>DASM</strong>) features derived from it.</li>
+          <li>Built the raw-signal preprocessing pipeline in <strong>SciPy</strong> and <strong>NumPy</strong> (Butterworth bandpass, downsampling, z-score normalization, windowing), and re-ran the experiments on the <strong>14 channels</strong> of a consumer Emotiv EPOC+ headset to test viability on affordable hardware.</li>
+        </ul>
+      </div>
 
-      <div class="item-header">Graph-Based Image Segmentation</div>
-      <ul>
-        <li>Created a C# application to segment images by modeling pixels as nodes in a graph and applying custom
-          edge-sorting and segment-merging algorithms.</li>
-      </ul>
+      <div class="project">
+        <div class="project-title">Blood Cell Detection with YOLO<a class="repo-link" href="https://github.com/Omar-Elhakim/Blood-Object-Detection-with-YOLO" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Located and classified red cells, white cells and platelets in blood-smear microscope images, fine-tuning pretrained <strong>YOLOv8</strong> and <strong>YOLOv5</strong> detectors on 364 annotated slides and benchmarking the two generations on the same split at <strong>0.93 mAP@50</strong>.</li>
+          <li>Wrote the dataset pipeline behind the training run, converting <strong>~5000</strong> corner-coordinate bounding boxes into normalized <strong>YOLO</strong> center format with <strong>OpenCV</strong>.</li>
+          <li>Evaluated per class, holding <strong>0.98 mAP@50</strong> on white cells despite being outnumbered ten to one by red cells.</li>
+        </ul>
+      </div>
 
-      <div class="item-header">Machinery Fault Diagnosis (Vibration Analysis)</div>
-      <ul>
-        <li>Developed a time-series classification model to detect mechanical faults using PyTorch, Fastai, and Tsai,
-          leveraging Optuna for hyperparameter tuning to optimize the F1 score.</li>
-      </ul>
+      <div class="project">
+        <div class="project-title">Graph-Based Image Segmentation<a class="repo-link" href="https://github.com/OmarWatany/ImageSegmentation" target="_blank" title="View on GitHub"><svg viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        </div>
+        <ul>
+          <li>Split images into regions in <strong>C#</strong>, implementing a <strong>graph segmentation</strong> algorithm from its paper over a graph built from every pixel.</li>
+          <li>Sorted those edges in <strong>linear time</strong> with a 256-bucket <strong>counting sort</strong> rather than an O(E log E) comparison sort.</li>
+          <li>Segmented the red, green and blue channels independently and intersected the three results.</li>
+        </ul>
+      </div>
+
     </div>
   </div>
 
@@ -199,12 +249,13 @@
     <div class="section-title">Technical Skills</div>
     <div class="section-content">
       <div><strong>Languages:</strong> Python, C/C++, C#, Java, PHP, JavaScript, SQL, Bash</div>
-      <div><strong>Tools/Frameworks:</strong> PyTorch, TensorFlow, LangChain, Laravel, Docker, Git, Linux, Django </div>
+      <div><strong>Tools/Frameworks:</strong> PyTorch, TensorFlow, scikit-learn, NumPy, Pandas, SciPy, OpenCV, LangChain,
+        FastAPI, Laravel, Docker, Git, Linux, Django</div>
     </div>
   </div>
 
   <div class="section">
-    <div class="section-title">Training & Development</div>
+    <div class="section-title">Training &amp; Development</div>
     <div class="section-content">
       <ul>
         <li><strong>MEC Model of Leadership:</strong> Completed an extensive leadership program (160 hours) covering
@@ -213,6 +264,7 @@
       </ul>
     </div>
   </div>
+
 </body>
 
 </html>
